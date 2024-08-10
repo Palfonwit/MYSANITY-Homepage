@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Minimalist Homepage</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <style>
+        /* Import Custom Font */
+        @font-face {
+            font-family: 'YD Gothic';
+            src: url('/fonts/yd-gothic-500.woff2') format('woff2'),
+                 url('/fonts/yd-gothic-500.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'YD Gothic', sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 3.5em;
+            margin: 60px 0;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: #fff; /* White text color */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glowing effect */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            margin: 50px;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 10px; /* Adjusted margin for smaller screens */
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.6em;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            background-color: transparent; /* No background color initially */
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000;
+            background-color: #fff; /* White background on hover */
+            transform: scale(1.1); /* Slightly enlarge the button */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .text-box {
+            display: inline-block;
+            padding: 20px;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly translucent background */
+            border: 2px solid #fff; /* White border */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5em;
+            }
+            nav a {
+                font-size: 1.2em;
+                padding: 8px 16px;
+            }
+            .text-box {
+                padding: 15px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">MY SANITY!</div>
+
+<div class="container">
+    <nav>
+        <a href="https://palfonwit.github.io/MYSANITY-CustomDawid/" target="_blank">
+            Custom Dawid
+        </a>
+        <a href="https://palfonwit.github.io/MYSANITY-Rockerboy/" target="_blank">
+            Rockerboy
+        </a>
+    </nav>
+
+    <div class="text-box">
+        Welcome to MYSANITY! This is a test website I created while I was learning how to code websites. This is the homepage of my gallery websites. All these images were created by yours truly while I obsessively play Cyberpunk 2077.
+    </div>
+</div>
+
+</body>
+</html>
